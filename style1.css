@@ -8,14 +8,14 @@ body {
 	font-family: sans-serif;
 }
 
-.login-container {
+.login1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
 }
 
-.login-box {
+.login-rect {
 	background: transparent;
 	backdrop-filter: blur(3px);
 	padding: 40px;
@@ -25,21 +25,21 @@ body {
 	transform-origin: center;
 }
 
-.login-box h1 {
+.login-rect h1 {
 	color: #050f1a;
 	text-align: center;
 	font-size: 40px;
 	margin: 0 0 20px 0;
 }
 
-.login-box label {
+.login-rect label {
 	display: block;
 	color: #184573;
 	margin-bottom: 5px;
 }
 
-.login-box input[type="email"],
-.login-box input[type="password"] {
+.login-rect input[type="email"],
+.login-rect input[type="password"] {
 	width: 100%;
 	padding: 10px;
 	border: none;
@@ -49,7 +49,7 @@ body {
 	background: transparent;
 }
 
-.login-box input[type="submit"] {
+.login-rect input[type="submit"] {
 	width: 100%;
 	background: #2c3e50;
 	color: #fff;
@@ -61,7 +61,7 @@ body {
 	transition: background-color 0.3s ease;
 }
 
-.login-box input[type="submit"]:hover {
+.login-rect input[type="submit"]:hover {
 	background: #7c1c1c;
 	color: #7aaee2;
 }
