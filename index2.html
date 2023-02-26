@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="1footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo"></a>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
+            <!-- <li><a href="#" >Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Work</a></li> -->
+            <li><a href="index.html" class="active">Log In</a></li>
         </ul>
     </header>
     <section>
-        <img src="stars.png" id="stars">
+        <img src="game-ground-platform-with-spaceman-alien-planet_107791-14572.avif" id="stars">
         <img src="moon.png" id="moon">
         <img src="mountains_behind.png" id="mountains_behind">
         <h2 id="text">Scribbit1010</h2>
-        <a href="#sec" id="btn">Explore</a>
+        <!-- <a href="#sec" id="btn">Login</a> -->
         <img src="mountains_front.png" id="mountains_front">
     </section>
     <div class="sec" id="sec">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quas eius ipsum quasi dolor, tenetur aliquam, in possimus error fuga facere. Assumenda, ratione quidem. Voluptatibus recusandae possimus iste voluptate velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam sint hic reprehenderit atque inventore possimus ipsam omnis eveniet, harum quo magnam sunt nemo excepturi eligendi recusandae, optio quod fugiat?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor enim asperiores cumque laborum doloribus libero voluptatem esse molestiae ullam, debitis quae accusamus velit hic nulla labore voluptatum, modi earum commodi. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, repudiandae eum! Aut quibusdam qui eius voluptate nesciunt et dignissimos impedit incidunt aspernatur, sint est libero, corrupti doloribus officia inventore delectus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis recusandae, minus dolorem ipsa, quae provident aut excepturi iure totam atque ducimus fugit minima. Quia dolorum repellendus reiciendis asperiores aliquam sit! <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio nisi quo quisquam autem tempora ab itaque deserunt! Temporibus beatae dicta natus quo voluptatum eligendi accusantium soluta. Ratione, hic doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sunt beatae blanditiis laborum corrupti laboriosam ratione ducimus mollitia quaerat aliquam debitis qui similique id? Error corporis dolorem dolore totam inventore!</p>
+        <h2>About Scribbit1010</h2>
+        <h3>A journey down the memory lane</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente laudantium temporibus iste! Temporibus rerum, vero consequuntur eum ipsum laboriosam fuga corporis magni veniam, consequatur dolorem quasi nisi quas perspiciatis minus!</p>
     </div>
 
     <script>
@@ -42,15 +46,28 @@
 
         window.addEventListener('scroll',function(){
             let value = window.scrollY;
-            stars.style.left = value * 0.25 + 'px';
+            stars.style.top = value * 0.25 + 'px';
             moon.style.top = value * 1.05 + 'px';
             mountains_behind.style.top = value * 0.35 + 'px';
-            mountains_front.style.top = value * 0 + 'px';
-            text.style.marginRight = value * 3.6 + 'px';
+            mountains_front.style.bottom = value * 2 + 'px';
+            text.style.marginRight = value * 2.75 + 'px';
             text.style.marginTop = value * 1.5 + 'px';
             btn.style.marginTop = value * 4 + 'px';
             header.style.top = value * 0.5 + 'px';
         })
     </script>
+</body>
+<body>
+    <footer>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://facebook.com/"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="https://twitter.com/?lang=en"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="https://instagram.com/"><span class="fab fa-instagram"></span></a></li>
+                <li><a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a></li>
+                <li><a href="https://in.linkedin.com/"><span class="fab fa-linkedin"></span></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

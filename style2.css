@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+   
 }
 body
 {
@@ -15,7 +16,7 @@ body
 }
 header
 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -55,6 +56,7 @@ header ul li a
 header ul li a:hover,
 header ul li a.active
 {
+    
     background: #fff;
     color:#2b1055;
 }
@@ -92,6 +94,7 @@ section img
 section img#moon
 {
     mix-blend-mode: screen;
+    opacity: 0;
 }
 section img#mountains_front
 {
